@@ -2,7 +2,7 @@
 
 ## R Package Template
 
-vslyzr is a variant visualization package that provides graphical visualization of different non-synonymous variants
+vslyzr is a variant visualization package that provides graphical visualization of VCF fies after variant calling.
 
   [R Packages](http://r-pkgs.had.co.nz/) <http://r-pkgs.had.co.nz/>
  
