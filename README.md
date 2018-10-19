@@ -13,7 +13,7 @@ Load the package (outside of this project) with:
     
 The step-by-step process on how to run the project
 
-#Load the dataset
+#Load the dataset &nbsp;
 load("./data/vslyzr_example.rdata")
 
 #Creates an object of class chromR from variant data
