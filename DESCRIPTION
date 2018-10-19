@@ -5,10 +5,12 @@ Version: 0.1.0
 Author: Deus Bajaj
 Maintainer: Deus Bajaj <deus.bajaj@mail.utoronto.ca>
 Description: vslyzr is a variant visualization package that provides 
-              graphical visualization of different non-synonymous variants 
+              graphical visualization for VCF files.  
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: vcfR, graphics, ggplot2
 Suggests:
-    testthat
+    testthat,
+    VariantTools
 RoxygenNote: 6.1.0

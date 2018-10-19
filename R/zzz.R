@@ -2,9 +2,6 @@
 #
 # Package startup and unload functions
 
-
-
-
 .onLoad <- function(libname, pkgname) {
 
     # # Make list of package parameters and add to global options
@@ -28,7 +25,7 @@
 .onAttach <- function(libname, pkgname) {
   # Startup message
   m <- character()
-  m[1] <- "\nWelcome to <your package name>.\n"
+  m[1] <- "\nWelcome to vslyzr.\n"
 
   packageStartupMessage(paste(m, collapse=""))
 }

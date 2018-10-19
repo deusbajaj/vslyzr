@@ -1,22 +1,25 @@
-#' NO-SUCH data.
+#' Example data for vslyzr.
 #'
-#' Description of the data ....
+#' An example dataset is a subset of the pinfsc50 dataset.
+#' This data consists of 3 samples and 5 variants.
 #'
-#' @format Example A MAF formatted file with 15 rows and 32 columns:
 #' \describe{
-#'   \item{exampleHUGO_Symbol}{example this is a HGNC gene symbol}
-#'   \item{exampleENTREZ_GENE_ID}{this is an ID}
-#'   ...
+#'   \item dna DNAbin object
+#'   \item gff gff format data.frame
+#'   \item vcf vcfR object
 #' }
-#' @source \url{https://example.com/docs/dummy_formats/}
+#'
+#' @source \url{https://github.com/knausb/vcfR/blob/master/data/vcfR_example.rdata}
 #' @examples
+#' data(vslyzr_example)
 #' \dontrun{
-#' system.file("data", "NOSUCH.maf", package="rpt")
-#' fPath <- system.file("data", "NOSUCH.maf", package="rpt")
-#' myExample <- read.delim(fPath, stringsAsFactors = FALSE)
+#' system.file("data", "vslyzr_example.rdata", package="vslyzr")
+#' fPath <- system.file("data", "vslyzr_example.rdata", package="vslyzr")
 #' }
+#'
 #' @docType data
-#' @name NOSUCH.maf
+#' @name vslyzr_example.rdata
 NULL
+
 
 

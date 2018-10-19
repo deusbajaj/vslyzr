@@ -8,22 +8,21 @@ vslyzr is a variant visualization package that provides graphical visualization 
 
 -----------------------------------------------
 
-Note: you can't push empty directories to your repository. Make sure youu keep
-at least one file in every directory that you want to keep during development.
- 
------------------------------------------------
-
-Some useful keyboard shortcuts for package authoring:
-
-* Build and Reload Package:  `Cmd + Shift + B`
-* Update Documentation:      `Cmd + Shift + D` or `devtools::document()`
-* Test Package:              `Cmd + Shift + T`
-* Check Package:             `Cmd + Shift + E` or `devtools::check()`
-
------------------------------------------------
-
-
 Load the package (outside of this project) with:
-    `devtools::install_github("<your user name>/<your package name>")`
+    `devtools::install_github("deusbajaj/vslyzr")`
+    
+# ====  PROCESS  ===============================================================
+# The step-by-step process on how to run the project
+
+#Load the dataset
+load("./data/vslyzr_example.rdata")
+
+#Creates an object of class chromR from variant data
+chrom <- create.chromR('sc50', seq=dna, vcf=vcf, ann=gff)
+chrom <- masker(chrom)
+elems <- extract.gt(chrom, element="GQ", as.numeric=TRUE)
+
+#Plot the numeric matrix from the VCF file.
+varbarplot(elems)
 
 
