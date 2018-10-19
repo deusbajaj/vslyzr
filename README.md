@@ -11,7 +11,6 @@ vslyzr is a variant visualization package that provides graphical visualization 
 Load the package (outside of this project) with:
     `devtools::install_github("deusbajaj/vslyzr")`
     
-====  PROCESS  ==============================
 The step-by-step process on how to run the project
 
 #Load the dataset
