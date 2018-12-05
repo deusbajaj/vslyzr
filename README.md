@@ -10,11 +10,11 @@ vslyzr is a variant visualization package that provides graphical visualization 
 
 Load the package (outside of this project) with:
     `devtools::install_github("deusbajaj/vslyzr")`
-    
-====  PROCESS  ==============================
+ 
+<pre> 
 The step-by-step process on how to run the project
 
-#Load the dataset
+#Load the dataset 
 load("./data/vslyzr_example.rdata")
 
 #Creates an object of class chromR from variant data
@@ -25,6 +25,6 @@ elems <- extract.gt(chrom, element="GQ", as.numeric=TRUE)
 
 #Plot the numeric matrix from the VCF file.
 varbarplot(elems)
-
+</pre>
 
 
