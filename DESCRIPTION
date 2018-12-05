@@ -12,5 +12,8 @@ LazyData: true
 Imports: vcfR, graphics, ggplot2
 Suggests:
     testthat,
-    VariantTools
+    VariantTools,
+    knitr,
+    rmarkdown
 RoxygenNote: 6.1.0
+VignetteBuilder: knitr

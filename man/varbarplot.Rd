@@ -4,7 +4,7 @@
 \alias{varbarplot}
 \title{varbarplot}
 \usage{
-varbarplot(matrix, title, legend = FALSE)
+varbarplot(matrix, title = NULL, legend = FALSE)
 }
 \arguments{
 \item{matrix}{a numeric matrix.}

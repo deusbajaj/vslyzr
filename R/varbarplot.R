@@ -16,22 +16,24 @@
 #' varbarplot(elems)
 #' @export
 
-varbarplot <- function(matrix, title, legend = FALSE) {
+varbarplot <- function(matrix, title = NULL, legend = FALSE) {
 
 stopifnot(class(matrix) == 'matrix')
 
 num_rows <- 2
 num_cols <- 2
-if(legend == TRUE){ num_cols <- num_cols + 1 }
+if(legend == TRUE){
+  num_cols <- num_cols + 1
+}
 
 #if( legend == TRUE ){
 # graphics::layout(matrix(1:2, nrow=num_rows, ncol=num_cols, byrow = TRUE), widths=c(4, 0.2))
 #}
 
 if (legend == TRUE) {
-  barplot(matrix, legend = colnames(elems), col=c("darkblue","red"))
+  barplot(matrix, main = title, legend = colnames(elems), col=c("darkblue","red"))
 }
-  barplot(matrix, col=c("darkblue","red"))
+  barplot(matrix, main = title, col=c("darkblue","red"))
 
   #graphics::text(0.5, mp[1,1], "Low", col="#FFFFFF", adj=c(0.5,0))
   #graphics::text(0.5, mp[nrow(mp),1], "High", col="#FFFFFF", adj=c(0.5,1))
